@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\Program Files (x86)\FEZ\NVorbis.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{242C8B76-0F44-4BE0-A338-BBDBB4202627}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>NVorbis</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.5.5.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>NVorbis</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VorbisReader.cs" />
+    <Compile Include="VorbisMode.cs" />
+    <Compile Include="VorbisTime.cs" />
+    <Compile Include="VorbisResidue.cs" />
+    <Compile Include="DataPacket.cs" />
+    <Compile Include="RingBuffer.cs" />
+    <Compile Include="Mdct.cs" />
+    <Compile Include="IVorbisStreamStatus.cs" />
+    <Compile Include="VorbisCodebook.cs" />
+    <Compile Include="Hashing.cs" />
+    <Compile Include="ACache.cs" />
+    <Compile Include="IPacketProvider.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="VorbisFloor.cs" />
+    <Compile Include="VorbisStreamDecoder.cs" />
+    <Compile Include="Huffman.cs" />
+    <Compile Include="HuffmanListNode`1.cs" />
+    <Compile Include="VorbisMapping.cs" />
+    <Compile Include="Ogg\PageFlags.cs" />
+    <Compile Include="Ogg\Packet.cs" />
+    <Compile Include="Ogg\ContainerReader.cs" />
+    <Compile Include="Ogg\ThreadSafeStream.cs" />
+    <Compile Include="Ogg\PacketReader.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\Program Files (x86)\FEZ\MonoGame.Framework.Windows.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F846F6F-C3FA-41F6-8F4B-0C6B84D74FA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MonoGame.Framework.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>2.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System" />
+    <Reference Include="OpenTK">
+      <HintPath>lib\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="SharpDX.XInput">
+      <HintPath>lib\SharpDX.XInput.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis">
+      <HintPath>lib\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="SharpDX">
+      <HintPath>lib\SharpDX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="System\Drawing\ImageEx.cs" />
+    <Compile Include="Microsoft\Xna\Framework\IGameComponent.cs" />
+    <Compile Include="Microsoft\Xna\Framework\IUpdateable.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GameComponent.cs" />
+    <Compile Include="Microsoft\Xna\Framework\IDrawable.cs" />
+    <Compile Include="Microsoft\Xna\Framework\DrawableGameComponent.cs" />
+    <Compile Include="Microsoft\Xna\Framework\PreparingDeviceSettingsEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Game.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GameComponentCollectionEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GameComponentCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GameServiceContainer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GameTime.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GameWindow.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GraphicsDeviceInformation.cs" />
+    <Compile Include="Microsoft\Xna\Framework\IGraphicsDeviceManager.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GraphicsDeviceManager.cs" />
+    <Compile Include="Microsoft\Xna\Framework\LaunchParameters.cs" />
+    <Compile Include="Microsoft\Xna\Framework\FrameworkDispatcher.cs" />
+    <Compile Include="Microsoft\Xna\Framework\TitleContainer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\PlayerIndex.cs" />
+    <Compile Include="Microsoft\Xna\Framework\MathHelper.cs" />
+    <Compile Include="Microsoft\Xna\Framework\DisplayOrientation.cs" />
+    <Compile Include="Microsoft\Xna\Framework\ContainmentType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\BoundingBox.cs" />
+    <Compile Include="Microsoft\Xna\Framework\BoundingFrustum.cs" />
+    <Compile Include="Microsoft\Xna\Framework\BoundingSphere.cs" />
+    <Compile Include="Microsoft\Xna\Framework\CurveLoopType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\CurveTangent.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Curve.cs" />
+    <Compile Include="Microsoft\Xna\Framework\CurveContinuity.cs" />
+    <Compile Include="Microsoft\Xna\Framework\CurveKey.cs" />
+    <Compile Include="Microsoft\Xna\Framework\CurveKeyCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Matrix.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Color.cs" />
+    <Compile Include="Microsoft\Xna\Framework\PlaneIntersectionType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Plane.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Point.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Quaternion.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Ray.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Rectangle.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Vector2.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Vector3.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Vector4.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Threading.cs" />
+    <Compile Include="Microsoft\Xna\Framework\PowerLineStatus.cs" />
+    <Compile Include="Microsoft\Xna\Framework\OpenTKGameWindow.cs" />
+    <Compile Include="Microsoft\Xna\Framework\PlaneHelper.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GameRunBehavior.cs" />
+    <Compile Include="Microsoft\Xna\Framework\ButtonDefinition.cs" />
+    <Compile Include="Microsoft\Xna\Framework\BatteryChargeStatus.cs" />
+    <Compile Include="Microsoft\Xna\Framework\ReusableItemList`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\SoundEffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamePlatform.cs" />
+    <Compile Include="Microsoft\Xna\Framework\ThumbStickDefinition.cs" />
+    <Compile Include="Microsoft\Xna\Framework\OpenTKGamePlatform.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerServicesComponent.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\SignedInEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\SignedOutEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\Gamer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\FriendGamer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerCollection`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerPrivilegeSetting.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerPrivileges.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\SignedInGamerCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\AchievementCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\Guide.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\MessageBoxIcon.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerZone.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerPresenceMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\FriendCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GameDefaults.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerPresence.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerProfile.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerServicesDispatcher.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GamerPrivilegeException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\GuideAlreadyVisibleException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\SignedInGamer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\Achievement.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\MonoGameGamerServicesHelper.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\MonoLiveGuide.cs" />
+    <Compile Include="Microsoft\Xna\Framework\GamerServices\MonoGameGamerServicesComponent.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\RenderTargetBinding.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\GraphicsDevice.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\IGraphicsDeviceService.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\GraphicsResource.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\BlendState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DepthStencilState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectAnnotation.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectAnnotationCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectPass.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectPassCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectParameter.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectParameterCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectTechnique.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectTechniqueCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Effect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Texture.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\TextureCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Texture2D.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\TextureCube.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Texture3D.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SamplerState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SamplerStateCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\GraphicsAdapter.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\RasterizerState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexDeclaration.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\IVertexType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexBuffer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DynamicVertexBuffer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\IndexBuffer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DynamicIndexBuffer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\RenderTarget2D.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\OcclusionQuery.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Model.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ModelBone.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ModelBoneCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ModelEffectCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ModelMesh.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ModelMeshCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ModelMeshPart.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ModelMeshPartCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectMaterial.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\IEffectMatrices.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\IEffectLights.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\IEffectFog.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteFont.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteBatch.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DirectionalLight.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\BasicEffect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DualTextureEffect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\AlphaTestEffect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EnvironmentMapEffect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectDirtyFlags.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectHelpers.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexPositionColor.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexPositionTexture.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexPositionColorTexture.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexPositionNormalTexture.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SkinnedEffect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexElement.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DisplayMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DisplayModeCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Viewport.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PresentationParameters.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\GraphicsProfile.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SurfaceFormat.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DepthFormat.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\GraphicsDeviceStatus.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PresentInterval.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ClearOptions.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\RenderTargetUsage.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SetDataOptions.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\CubeMapFace.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\BufferUsage.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\IndexElementSize.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PrimitiveType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexElementFormat.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexElementUsage.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\TextureFilter.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectParameterClass.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\EffectParameterType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\BlendFunction.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Blend.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\CompareFunction.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ColorWriteChannels.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\CullMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\StencilOperation.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\FillMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\TextureAddressMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteEffects.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteSortMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\GraphicsDeviceInformation.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\CompilerOptions.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ResourceType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexColorTexture.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ConstantBufferCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ShaderStage.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ConstantBuffer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DeviceType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexElementColor.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\TextureUsage.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ShaderProgramInfo.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\ShaderProgramCache.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteBatchItem.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexElementDeclaration.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SamplerType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SamplerInfo.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\Shader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexPosition2ColorTexture.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SaveStateMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteEffect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\VertexDeclarationCache`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SurfaceFormat_Legacy.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteBlendMode.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\GraphicsExtensions.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\MonoGameGLException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\DxtUtil.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\MultiSampleType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\SpriteBatcher.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\IPackedVector.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\IPackedVector`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\HalfSingle.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\HalfVector2.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\NormalizedShort2.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\NormalizedShort4.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\Short2.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Graphics\PackedVector\HalfTypeHelper.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\BasicEffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\SkinnedEffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\EnvironmentMapEffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\DualTextureEffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\AlphaTestEffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\EffectMaterialReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\EffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\IndexBufferReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ModelReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\SpriteFontReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\Texture2DReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\TextureCubeReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\TextureReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\VertexBufferReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\VertexDeclarationReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentSerializerAttribute.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentSerializerIgnoreAttribute.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentLoadException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentManager.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ResourceContentManager.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentTypeReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentTypeReader`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ArrayReader`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\DictionaryReader`2.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\EnumReader`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ExternalReferenceReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ListReader`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\Vector2Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\Vector3Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\Vector4Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\MatrixReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\QuaternionReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\PlaneReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\PointReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\RectangleReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\BoundingBoxReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\BoundingSphereReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\BoundingFrustumReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\RayReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\CurveReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ColorReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\NullableReader`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\StringReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ByteReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\SByteReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\Int16Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\UInt16Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\Int32Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\UInt32Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\Int64Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\UInt64Reader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\SingleReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\DoubleReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\BooleanReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\CharReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\DateTimeReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\TimeSpanReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\DecimalReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\SongReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\SoundEffectReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentTypeReaderManager.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ReflectiveReader`1.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\LzxDecoder.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\LzxConstants.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\UnsupportedWindowSizeRange.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Content\ContentExtensions.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\AudioChannels.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\SoundEffect.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\SoundState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\SoundEffectInstance.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\AudioEmitter.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\AudioListener.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\NoAudioHardwareException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\InstancePlayLimitException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\Cue.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\AudioStopOptions.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\SoundBank.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\WaveBank.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\AudioCategory.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\AudioEngine.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\XactClip.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\AudioLoader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\OpenALSoundController.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\Sound.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\XactSound.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\ALHelper.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\OggStream.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Audio\OggStreamer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\MediaState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\MediaLibrary.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\MediaSourceType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\MediaSource.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\MediaPlayer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\MediaQueue.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\Playlist.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\PlaylistCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\Song.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\SongCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\Video.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Media\VideoSoundtrackType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Keyboard.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Mouse.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Buttons.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\ButtonState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePad.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadDeadZone.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Keys.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\KeyState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\KeyboardState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\MouseState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadButtons.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadDPad.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadThumbSticks.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadTriggers.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\GamePadCapabilities.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\KeyboardUtil.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Touch\GestureType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Touch\GestureSample.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Touch\TouchCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Touch\TouchLocationState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Touch\TouchPanelCapabilities.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Touch\TouchLocation.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Input\Touch\TouchPanel.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionEndedEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\GamerJoinedEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\GamerLeftEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\GameStartedEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\GameEndedEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\HostChangedEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\PacketReader.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\PacketWriter.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\QualityOfService.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionState.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionEndReason.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\SendDataOptions.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\AvailableNetworkSession.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\AvailableNetworkSessionCollection.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkGamer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\LocalNetworkGamer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkMachine.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSession.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionProperties.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionJoinError.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionJoinException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\ICommand.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandReceiveData.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandGamerJoined.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkMessageType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandSessionStateChange.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionAsynchronousCreate.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionAsynchronousFind.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionAsynchronousJoin.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkSessionAsynchronousJoinInvited.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\InviteAcceptedEventArgs.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandEventType.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\NetworkNotAvailableException.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandSendData.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandGamerStateChange.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandGamerLeft.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\CommandEvent.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\GamerStates.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\MonoGameNetworkConfiguration.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Net\MonoGamerPeer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Storage\StorageDevice.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Storage\StorageContainer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Storage\StorageDeviceHelper.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Storage\ShowSelectorAsynchronousShow.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Storage\ShowSelectorAsynchronousShowNoPlayer.cs" />
+    <Compile Include="Microsoft\Xna\Framework\Storage\OpenContainerAsynchronous.cs" />
+    <Compile Include="MonoGame\Framework\MonoLive\MonoLive.cs" />
+    <Compile Include="MonoGame\Framework\MonoLive\Result.cs" />
+    <Compile Include="MonoGame\Framework\MonoLive\Gamer.cs" />
+    <Compile Include="MonoGame\Framework\MonoLive\SignInCompletedEventHandler.cs" />
+    <Compile Include="MonoGame\Framework\MonoLive\SignInCompletedEventArgs.cs" />
+    <Compile Include="MonoGame\Framework\MonoLive\RegisterCompletedEventHandler.cs" />
+    <Compile Include="MonoGame\Framework\MonoLive\RegisterCompletedEventArgs.cs" />
+    <Compile Include="MonoGame\Framework\GamerServices\MonoLiveClient.cs" />
+    <Compile Include="MonoGame\Framework\GamerServices\SignInCompletedEventArgs.cs" />
+    <Compile Include="MonoGame\Utilities\Hash.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\Xna\Framework\Graphics\Effect\Resources\AlphaTestEffect\ogl.mgfxo" />
+    <EmbeddedResource Include="Microsoft\Xna\Framework\Graphics\Effect\Resources\BasicEffect\ogl.mgfxo" />
+    <EmbeddedResource Include="Microsoft\Xna\Framework\Graphics\Effect\Resources\DualTextureEffect\ogl.mgfxo" />
+    <EmbeddedResource Include="Microsoft\Xna\Framework\Graphics\Effect\Resources\EnvironmentMapEffect\ogl.mgfxo" />
+    <EmbeddedResource Include="Microsoft\Xna\Framework\Graphics\Effect\Resources\SkinnedEffect\ogl.mgfxo" />
+    <EmbeddedResource Include="Microsoft\Xna\Framework\Graphics\Effect\Resources\SpriteEffect\ogl.mgfxo" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

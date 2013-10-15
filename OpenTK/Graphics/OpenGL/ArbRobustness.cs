@@ -1,0 +1,19 @@
+﻿// Type: OpenTK.Graphics.OpenGL.ArbRobustness
+// Assembly: OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4
+// MVID: FE2CFFE8-B942-430E-8C15-E783DB6F0AD6
+// Assembly location: F:\Program Files (x86)\FEZ\OpenTK.dll
+
+namespace OpenTK.Graphics.OpenGL
+{
+  public enum ArbRobustness
+  {
+    NoError = 0,
+    ContextFlagRobustAccessBitArb = 4,
+    LoseContextOnResetArb = 33362,
+    GuiltyContextResetArb = 33363,
+    InnocentContextResetArb = 33364,
+    UnknownContextResetArb = 33365,
+    ResetNotificationStrategyArb = 33366,
+    NoResetNotificationArb = 33377,
+  }
+}

@@ -1,0 +1,19 @@
+﻿// Type: SharpDX.IO.NativeFileShare
+// Assembly: SharpDX, Version=2.4.2.0, Culture=neutral, PublicKeyToken=627a3d6d1956f55a
+// MVID: 578390A1-1524-4146-8C27-2E9750400D7A
+// Assembly location: F:\Program Files (x86)\FEZ\SharpDX.dll
+
+using System;
+
+namespace SharpDX.IO
+{
+  [Flags]
+  public enum NativeFileShare : uint
+  {
+    None = 0U,
+    Read = 1U,
+    Write = 2U,
+    ReadWrite = Write | Read,
+    Delete = 4U,
+  }
+}

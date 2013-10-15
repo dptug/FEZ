@@ -1,0 +1,69 @@
+﻿// Type: Microsoft.Xna.Framework.Media.Video
+// Assembly: MonoGame.Framework.Windows, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: D2107839-320D-467B-B82A-28CB452CC584
+// Assembly location: F:\Program Files (x86)\FEZ\MonoGame.Framework.Windows.dll
+
+using Microsoft.Xna.Framework;
+using System;
+using System.IO;
+
+namespace Microsoft.Xna.Framework.Media
+{
+  public sealed class Video : IDisposable
+  {
+    private Color _backColor = Color.Black;
+    private string _fileName;
+
+    public Color BackgroundColor
+    {
+      get
+      {
+        return this._backColor;
+      }
+      set
+      {
+        this._backColor = value;
+      }
+    }
+
+    public string FileName
+    {
+      get
+      {
+        return this._fileName;
+      }
+    }
+
+    internal Video(string FileName)
+    {
+      this._fileName = FileName;
+      this.Prepare();
+    }
+
+    internal static string Normalize(string FileName)
+    {
+      if (File.Exists(FileName))
+        return FileName;
+      if (!string.IsNullOrEmpty(Path.GetExtension(FileName)))
+        return (string) null;
+      if (File.Exists(FileName + ".mp4"))
+        return FileName + ".mp4";
+      if (File.Exists(FileName + ".mov"))
+        return FileName + ".mov";
+      if (File.Exists(FileName + ".avi"))
+        return FileName + ".avi";
+      if (File.Exists(FileName + ".m4v"))
+        return FileName + ".m4v";
+      else
+        return (string) null;
+    }
+
+    internal void Prepare()
+    {
+    }
+
+    public void Dispose()
+    {
+    }
+  }
+}

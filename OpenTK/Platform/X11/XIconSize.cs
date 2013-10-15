@@ -1,0 +1,17 @@
+﻿// Type: OpenTK.Platform.X11.XIconSize
+// Assembly: OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4
+// MVID: FE2CFFE8-B942-430E-8C15-E783DB6F0AD6
+// Assembly location: F:\Program Files (x86)\FEZ\OpenTK.dll
+
+namespace OpenTK.Platform.X11
+{
+  internal struct XIconSize
+  {
+    public int min_width;
+    public int min_height;
+    public int max_width;
+    public int max_height;
+    public int width_inc;
+    public int height_inc;
+  }
+}

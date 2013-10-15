@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\Program Files (x86)\FEZ\FEZ.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{914CEB2E-9932-4328-9247-17A3D59D0C29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>FEZ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>FezGame</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FezEngine">
+      <HintPath>lib\FezEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>lib\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunityExpress">
+      <HintPath>lib\CommunityExpress.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Reference Include="EasyStorage">
+      <HintPath>lib\EasyStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>lib\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="XnaWordWrapCore">
+      <HintPath>lib\XnaWordWrapCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fez.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Services\IGameLevelManager.cs" />
+    <Compile Include="Services\GameLevelManager.cs" />
+    <Compile Include="Services\IPlayerManager.cs" />
+    <Compile Include="Services\PlayerManager.cs" />
+    <Compile Include="Services\IPhysicsManager.cs" />
+    <Compile Include="Services\PhysicsManager.cs" />
+    <Compile Include="Services\IGameCameraManager.cs" />
+    <Compile Include="Services\GameCameraManager.cs" />
+    <Compile Include="Services\GameLevelMaterializer.cs" />
+    <Compile Include="Services\IGameStateManager.cs" />
+    <Compile Include="Services\GameStateManager.cs" />
+    <Compile Include="Services\MockUser.cs" />
+    <Compile Include="Services\ICollisionManager.cs" />
+    <Compile Include="Services\CollisionManager.cs" />
+    <Compile Include="Services\Scripting\OwlService.cs" />
+    <Compile Include="Services\Scripting\CameraService.cs" />
+    <Compile Include="Services\Scripting\TimeswitchService.cs" />
+    <Compile Include="Services\Scripting\SoundService.cs" />
+    <Compile Include="Services\Scripting\LaserEmitterService.cs" />
+    <Compile Include="Services\Scripting\LaserReceiverService.cs" />
+    <Compile Include="Services\Scripting\DotService.cs" />
+    <Compile Include="Services\Scripting\LevelService.cs" />
+    <Compile Include="Services\Scripting\GroupService.cs" />
+    <Compile Include="Services\Scripting\SpinBlockService.cs" />
+    <Compile Include="Services\Scripting\PlaneService.cs" />
+    <Compile Include="Services\Scripting\TimeService.cs" />
+    <Compile Include="Services\Scripting\ScriptService.cs" />
+    <Compile Include="Services\Scripting\NpcService.cs" />
+    <Compile Include="Services\Scripting\SuckBlockService.cs" />
+    <Compile Include="Services\Scripting\WarpGateService.cs" />
+    <Compile Include="Services\Scripting\PathService.cs" />
+    <Compile Include="Services\Scripting\CodePatternService.cs" />
+    <Compile Include="Services\Scripting\PivotService.cs" />
+    <Compile Include="Services\Scripting\SwitchService.cs" />
+    <Compile Include="Services\Scripting\GomezService.cs" />
+    <Compile Include="Services\Scripting\ArtObjectService.cs" />
+    <Compile Include="Services\Scripting\VolumeService.cs" />
+    <Compile Include="Services\Scripting\ValveService.cs" />
+    <Compile Include="Services\Scripting\TombstoneService.cs" />
+    <Compile Include="Services\Scripting\BitDoorService.cs" />
+    <Compile Include="Components\PushSwitchesHost.cs" />
+    <Compile Include="Components\PlayerActions.cs" />
+    <Compile Include="Components\OrreryHost.cs" />
+    <Compile Include="Components\HoleParticlesHost.cs" />
+    <Compile Include="Components\BigWaterfallHost.cs" />
+    <Compile Include="Components\AchievementSellScreen.cs" />
+    <Compile Include="Components\TrialAndAwards.cs" />
+    <Compile Include="Components\SaveIndicator.cs" />
+    <Compile Include="Components\Quantumizer.cs" />
+    <Compile Include="Components\MenuBase.cs" />
+    <Compile Include="Components\HeavyGroupsHost.cs" />
+    <Compile Include="Components\HeavyGroupState.cs" />
+    <Compile Include="Components\GeysersHost.cs" />
+    <Compile Include="Components\EldersHexahedron.cs" />
+    <Compile Include="Components\DebugControls.cs" />
+    <Compile Include="Components\WorldAxisHost.cs" />
+    <Compile Include="Components\WatchersHost.cs" />
+    <Compile Include="Components\UnfoldPuzzleHost.cs" />
+    <Compile Include="Components\LoadingScreen.cs" />
+    <Compile Include="Components\IntroPanDown.cs" />
+    <Compile Include="Components\FezLogo.cs" />
+    <Compile Include="Components\FakeDot.cs" />
+    <Compile Include="Components\BitDoorsHost.cs" />
+    <Compile Include="Components\BitDoorState.cs" />
+    <Compile Include="Components\ValvesBoltsTimeswitchesHost.cs" />
+    <Compile Include="Components\PointsOfInterestHost.cs" />
+    <Compile Include="Components\OwlStatueHost.cs" />
+    <Compile Include="Components\IntroZoomIn.cs" />
+    <Compile Include="Components\GomezHost.cs" />
+    <Compile Include="Components\GameWideCodes.cs" />
+    <Compile Include="Components\FlickeringNeon.cs" />
+    <Compile Include="Components\CryptHost.cs" />
+    <Compile Include="Components\TempleOfLoveHost.cs" />
+    <Compile Include="Components\SplitUpCubeHost.cs" />
+    <Compile Include="Components\NowLoadingHexahedron.cs" />
+    <Compile Include="Components\MailboxesHost.cs" />
+    <Compile Include="Components\GameNpcHost.cs" />
+    <Compile Include="Components\GameNpcState.cs" />
+    <Compile Include="Components\ClockTowerHost.cs" />
+    <Compile Include="Components\WaterfallsHost.cs" />
+    <Compile Include="Components\RainHost.cs" />
+    <Compile Include="Components\QrCodesHost.cs" />
+    <Compile Include="Components\PickupsHost.cs" />
+    <Compile Include="Components\MovingGroundsPickupComparer.cs" />
+    <Compile Include="Components\PickupState.cs" />
+    <Compile Include="Components\NesGlitches.cs" />
+    <Compile Include="Components\EndCutscene32Host.cs" />
+    <Compile Include="Components\WorldMap.cs" />
+    <Compile Include="Components\TrixelParticleSystem.cs" />
+    <Compile Include="Components\PolytronLogo.cs" />
+    <Compile Include="Components\MainMenu.cs" />
+    <Compile Include="Components\LevelTransition.cs" />
+    <Compile Include="Components\LevelLooper.cs" />
+    <Compile Include="Components\BellHost.cs" />
+    <Compile Include="Components\TelescopeHost.cs" />
+    <Compile Include="Components\SpinningTreasuresHost.cs" />
+    <Compile Include="Components\RumblerHost.cs" />
+    <Compile Include="Components\GodRays.cs" />
+    <Compile Include="Components\EndCutscene64Host.cs" />
+    <Compile Include="Components\IBlackHoleManager.cs" />
+    <Compile Include="Components\BlackHolesHost.cs" />
+    <Compile Include="Components\SpinBlocksHost.cs" />
+    <Compile Include="Components\RotatingGroupsHost.cs" />
+    <Compile Include="Components\PlayerCameraControl.cs" />
+    <Compile Include="Components\OwlHeadHost.cs" />
+    <Compile Include="Components\SuckBlocksHost.cs" />
+    <Compile Include="Components\RopeBridgesHost.cs" />
+    <Compile Include="Components\BridgeState.cs" />
+    <Compile Include="Components\SecretPassagesHost.cs" />
+    <Compile Include="Components\LogoRenderer.cs" />
+    <Compile Include="Components\IDotManager.cs" />
+    <Compile Include="Components\DotHost.cs" />
+    <Compile Include="Components\DotFaceButton.cs" />
+    <Compile Include="Components\CodeMachineHost.cs" />
+    <Compile Include="Components\ITrixelParticleSystems.cs" />
+    <Compile Include="Components\TrixelParticleSystems.cs" />
+    <Compile Include="Components\StargateHost.cs" />
+    <Compile Include="Components\SewerLightHacks.cs" />
+    <Compile Include="Components\Reboot.cs" />
+    <Compile Include="Components\GeezerLetterSender.cs" />
+    <Compile Include="Components\GameSequencer.cs" />
+    <Compile Include="Components\GameLevelHost.cs" />
+    <Compile Include="Components\TombstonesHost.cs" />
+    <Compile Include="Components\SequenceMarkersHost.cs" />
+    <Compile Include="Components\PauseMenu.cs" />
+    <Compile Include="Components\VolumesHost.cs" />
+    <Compile Include="Components\StarField.cs" />
+    <Compile Include="Components\LiquidColorScheme.cs" />
+    <Compile Include="Components\LiquidHost.cs" />
+    <Compile Include="Components\Intro.cs" />
+    <Compile Include="Components\FirstPersonView.cs" />
+    <Compile Include="Components\TileTransition.cs" />
+    <Compile Include="Components\TextScroll.cs" />
+    <Compile Include="Components\TetrisPuzzleHost.cs" />
+    <Compile Include="Components\ISpeechBubbleManager.cs" />
+    <Compile Include="Components\SpeechBubble.cs" />
+    <Compile Include="Components\SpeechFont.cs" />
+    <Compile Include="Components\IPlaneParticleSystems.cs" />
+    <Compile Include="Components\PlaneParticleSystems.cs" />
+    <Compile Include="Components\PivotsHost.cs" />
+    <Compile Include="Components\SpinAction.cs" />
+    <Compile Include="Components\LetterViewer.cs" />
+    <Compile Include="Components\IdleRestarter.cs" />
+    <Compile Include="Components\GameStateControl.cs" />
+    <Compile Include="Components\FinalRebuildHost.cs" />
+    <Compile Include="Components\BombsHost.cs" />
+    <Compile Include="Components\WarpGateHost.cs" />
+    <Compile Include="Components\WarpPanel.cs" />
+    <Compile Include="Components\WarpDestinations.cs" />
+    <Compile Include="Components\WarpDestinationsComparer.cs" />
+    <Compile Include="Components\StaticPreloader.cs" />
+    <Compile Include="Components\PyramidHost.cs" />
+    <Compile Include="Components\NameOfGodPuzzleHost.cs" />
+    <Compile Include="Components\MenuCube.cs" />
+    <Compile Include="Components\MenuCubeFace.cs" />
+    <Compile Include="Components\MenuCubeFaceComparer.cs" />
+    <Compile Include="Components\MenuCubeFaceExtensions.cs" />
+    <Compile Include="Components\HeadsUpDisplay.cs" />
+    <Compile Include="Components\GameLightingPostProcess.cs" />
+    <Compile Include="Components\CrumblersHost.cs" />
+    <Compile Include="Components\GlitchyRespawner.cs" />
+    <Compile Include="Components\GlitchyDespawner.cs" />
+    <Compile Include="Components\FarawayTransition.cs" />
+    <Compile Include="Components\FakeIntro.cs" />
+    <Compile Include="Components\FakeOutro.cs" />
+    <Compile Include="Components\AttachedPlanesHost.cs" />
+    <Compile Include="Components\Actions\PlayerAction.cs" />
+    <Compile Include="Components\Actions\Bounce.cs" />
+    <Compile Include="Components\Actions\Throw.cs" />
+    <Compile Include="Components\Actions\Sink.cs" />
+    <Compile Include="Components\Actions\PushPivot.cs" />
+    <Compile Include="Components\Actions\Teeter.cs" />
+    <Compile Include="Components\Actions\DropTrile.cs" />
+    <Compile Include="Components\Actions\GrabCornerLedge.cs" />
+    <Compile Include="Components\Actions\PullUpFromCornerLedge.cs" />
+    <Compile Include="Components\Actions\LowerToCornerLedge.cs" />
+    <Compile Include="Components\Actions\WakingUp.cs" />
+    <Compile Include="Components\Actions\PivotTombstone.cs" />
+    <Compile Include="Components\Actions\Idle.cs" />
+    <Compile Include="Components\Actions\FreeFall.cs" />
+    <Compile Include="Components\Actions\Die.cs" />
+    <Compile Include="Components\Actions\EnterTunnel.cs" />
+    <Compile Include="Components\Actions\GrabStraightLedge.cs" />
+    <Compile Include="Components\Actions\PullUpFromStraightLedge.cs" />
+    <Compile Include="Components\Actions\LowerToStraightLedge.cs" />
+    <Compile Include="Components\Actions\ShimmyOnLedge.cs" />
+    <Compile Include="Components\Actions\ToCornerTransition.cs" />
+    <Compile Include="Components\Actions\FromCornerTransition.cs" />
+    <Compile Include="Components\Actions\LookAround.cs" />
+    <Compile Include="Components\Actions\Crush.cs" />
+    <Compile Include="Components\Actions\WalkRun.cs" />
+    <Compile Include="Components\Actions\DropDown.cs" />
+    <Compile Include="Components\Actions\ClimbLadder.cs" />
+    <Compile Include="Components\Actions\ClimbOverLadder.cs" />
+    <Compile Include="Components\Actions\ClimbVine.cs" />
+    <Compile Include="Components\Actions\BellActions.cs" />
+    <Compile Include="Components\Actions\EnterDoor.cs" />
+    <Compile Include="Components\Actions\ExitDoor.cs" />
+    <Compile Include="Components\Actions\ReadSign.cs" />
+    <Compile Include="Components\Actions\ToClimbTransition.cs" />
+    <Compile Include="Components\Actions\Land.cs" />
+    <Compile Include="Components\Actions\Jump.cs" />
+    <Compile Include="Components\Actions\GateWarp.cs" />
+    <Compile Include="Components\Actions\ReadTurnAround.cs" />
+    <Compile Include="Components\Actions\Push.cs" />
+    <Compile Include="Components\Actions\LesserWarp.cs" />
+    <Compile Include="Components\Actions\PlayingDrums.cs" />
+    <Compile Include="Components\Actions\Standing.cs" />
+    <Compile Include="Components\Actions\Floating.cs" />
+    <Compile Include="Components\Actions\OpenTreasure.cs" />
+    <Compile Include="Components\Actions\Lift.cs" />
+    <Compile Include="Components\Actions\Carry.cs" />
+    <Compile Include="Components\Actions\Swim.cs" />
+    <Compile Include="Components\Actions\Slide.cs" />
+    <Compile Include="Components\Actions\SleepWake.cs" />
+    <Compile Include="Components\Actions\OpenDoor.cs" />
+    <Compile Include="Components\Actions\Grab.cs" />
+    <Compile Include="Components\Actions\Fall.cs" />
+    <Compile Include="Components\Actions\EnterPipe.cs" />
+    <Compile Include="Components\Actions\SuckedIn.cs" />
+    <Compile Include="Components\Actions\IWalkToService.cs" />
+    <Compile Include="Components\Actions\WalkTo.cs" />
+    <Compile Include="Components\Actions\Victory.cs" />
+    <Compile Include="Components\Actions\Suffer.cs" />
+    <Compile Include="Components\Actions\Jetpack.cs" />
+    <Compile Include="Components\EndCutscene32\TetraordialOoze.cs" />
+    <Compile Include="Components\EndCutscene32\Pixelizer.cs" />
+    <Compile Include="Components\EndCutscene32\FezGrid.cs" />
+    <Compile Include="Components\EndCutscene32\Fractal.cs" />
+    <Compile Include="Components\EndCutscene32\AxisDna.cs" />
+    <Compile Include="Components\EndCutscene32\DrumSolo.cs" />
+    <Compile Include="Components\EndCutscene32\VibratingMembrane.cs" />
+    <Compile Include="Components\EndCutscene64\MulticoloredSpace.cs" />
+    <Compile Include="Components\EndCutscene64\WhiteNoise.cs" />
+    <Compile Include="Components\EndCutscene64\DotsAplenty.cs" />
+    <Compile Include="Components\EndCutscene64\ZoomOut.cs" />
+    <Compile Include="Components\Scripting\IScriptingManager.cs" />
+    <Compile Include="Components\Scripting\ScriptingHost.cs" />
+    <Compile Include="Components\Scripting\ActiveScript.cs" />
+    <Compile Include="Components\Scripting\RunnableAction.cs" />
+    <Compile Include="Tools\SpaceDivider.cs" />
+    <Compile Include="Tools\GameText.cs" />
+    <Compile Include="Tools\StaticText.cs" />
+    <Compile Include="Tools\CreditsText.cs" />
+    <Compile Include="Tools\BackgroundTrileMaterializer.cs" />
+    <Compile Include="Tools\MovementHelper.cs" />
+    <Compile Include="Tools\LocalizedKeyboardState.cs" />
+    <Compile Include="Tools\ThreadExecutionState.cs" />
+    <Compile Include="Tools\SaveFileOperations.cs" />
+    <Compile Include="Structure\SaveData.cs" />
+    <Compile Include="Structure\LevelSaveData.cs" />
+    <Compile Include="Structure\MtUpdateContext.cs" />
+    <Compile Include="Structure\MtUpdateContext`1.cs" />
+    <Compile Include="Structure\SelectorPhase.cs" />
+    <Compile Include="Structure\CreditsEntry.cs" />
+    <Compile Include="Structure\SaveSlotInfo.cs" />
+    <Compile Include="Structure\MenuLevel.cs" />
+    <Compile Include="Structure\SaveSlotSelectionLevel.cs" />
+    <Compile Include="Structure\SaveManagementLevel.cs" />
+    <Compile Include="Structure\CreditsMenuLevel.cs" />
+    <Compile Include="Structure\HowToPlayMenuLevel.cs" />
+    <Compile Include="Structure\ControlsMenuLevel.cs" />
+    <Compile Include="Structure\LeaderboardsMenuLevel.cs" />
+    <Compile Include="Structure\MenuItem.cs" />
+    <Compile Include="Structure\MenuItem`1.cs" />
+    <Compile Include="Structure\IComplexPhysicsEntity.cs" />
+    <Compile Include="Structure\CachedLeaderboard.cs" />
+    <Compile Include="Structure\LeaderboardView.cs" />
+    <Compile Include="Structure\ClimbingApproach.cs" />
+    <Compile Include="Structure\ClimbingApproachExtensions.cs" />
+    <Compile Include="Structure\ActionType.cs" />
+    <Compile Include="Structure\ActionTypeComparer.cs" />
+    <Compile Include="Structure\ActionTypeExtensions.cs" />
+    <Compile Include="Structure\BoxCollisionResultExtensions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\Xna\Framework.RuntimeProfile" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

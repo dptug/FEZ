@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\Program Files (x86)\FEZ\CommunityExpress.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38D1EA59-94AB-4738-9C46-72B24BEF582F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CommunityExpress</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>CommunityExpressNS</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UserStatsReceived_t.cs" />
+    <Compile Include="GSStatsReceived_t.cs" />
+    <Compile Include="OnUserStatsReceivedFromSteam.cs" />
+    <Compile Include="OnUserStatsReceived.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="Servers.cs" />
+    <Compile Include="ELeaderboardDataRequest.cs" />
+    <Compile Include="ELeaderboardSortMethod.cs" />
+    <Compile Include="ELeaderboardDisplayType.cs" />
+    <Compile Include="ELeaderboardUploadScoreMethod.cs" />
+    <Compile Include="LeaderboardFindResult_t.cs" />
+    <Compile Include="OnLeaderboardRetrievedFromSteam.cs" />
+    <Compile Include="OnLeaderboardRetrieved.cs" />
+    <Compile Include="Leaderboards.cs" />
+    <Compile Include="LeaderboardEntries.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="RemoteStorage.cs" />
+    <Compile Include="Friend.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="LeaderboardEntry.cs" />
+    <Compile Include="EFriendRelationship.cs" />
+    <Compile Include="EPersonaState.cs" />
+    <Compile Include="EFriendFlags.cs" />
+    <Compile Include="EOverlayToStoreFlag.cs" />
+    <Compile Include="AvatarImageLoaded_t.cs" />
+    <Compile Include="OnLargeAvatarReceivedFromSteam.cs" />
+    <Compile Include="OnLargeAvatarReceived.cs" />
+    <Compile Include="Friends.cs" />
+    <Compile Include="SteamID.cs" />
+    <Compile Include="OnRequestComplete.cs" />
+    <Compile Include="SteamWebAPIRequest.cs" />
+    <Compile Include="EP2PSessionError.cs" />
+    <Compile Include="EP2PSend.cs" />
+    <Compile Include="P2PSessionRequest_t.cs" />
+    <Compile Include="P2PSessionConnectFail_t.cs" />
+    <Compile Include="OnNewP2PSessionFromSteam.cs" />
+    <Compile Include="OnNewP2PSession.cs" />
+    <Compile Include="OnSendP2PPacketFailedFromSteam.cs" />
+    <Compile Include="OnSendP2PPacketFailed.cs" />
+    <Compile Include="OnP2PPacketReceived.cs" />
+    <Compile Include="Networking.cs" />
+    <Compile Include="Lobbies.cs" />
+    <Compile Include="EUserHasLicenseForAppResult.cs" />
+    <Compile Include="OnUserGetEncryptedAppTicketFromSteam.cs" />
+    <Compile Include="OnUserEncryptedAppTicketCreated.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Achievements.cs" />
+    <Compile Include="Groups.cs" />
+    <Compile Include="EResult.cs" />
+    <Compile Include="EServerMode.cs" />
+    <Compile Include="EVoiceResult.cs" />
+    <Compile Include="EDenyReason.cs" />
+    <Compile Include="EBeginAuthSessionResult.cs" />
+    <Compile Include="EAuthSessionResponse.cs" />
+    <Compile Include="EUserHasLicenseResult.cs" />
+    <Compile Include="EUniverse.cs" />
+    <Compile Include="EAccountType.cs" />
+    <Compile Include="MicroTxnAuthorizationResponse_t.cs" />
+    <Compile Include="OnTransactionAuthorizationReceivedFromSteam.cs" />
+    <Compile Include="OnInGamePurchaseComplete.cs" />
+    <Compile Include="InGamePurchasing.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="CommunityExpress.cs" />
+    <Compile Include="SteamWebAPI.cs" />
+    <Compile Include="ELobbyType.cs" />
+    <Compile Include="ELobbyComparison.cs" />
+    <Compile Include="ELobbyDistanceFilter.cs" />
+    <Compile Include="EChatRoomEnterResponse.cs" />
+    <Compile Include="LobbyCreated_t.cs" />
+    <Compile Include="LobbyMatchList_t.cs" />
+    <Compile Include="LobbyEnter_t.cs" />
+    <Compile Include="servernetadr_t.cs" />
+    <Compile Include="gameserveritem_t.cs" />
+    <Compile Include="LobbyStringFilter.cs" />
+    <Compile Include="LobbyIntFilter.cs" />
+    <Compile Include="OnMatchmakingLobbyCreatedBySteam.cs" />
+    <Compile Include="OnLobbyCreated.cs" />
+    <Compile Include="OnMatchmakingLobbyListReceivedFromSteam.cs" />
+    <Compile Include="OnLobbyListReceived.cs" />
+    <Compile Include="OnMatchmakingLobbyJoinedFromSteam.cs" />
+    <Compile Include="OnLobbyJoined.cs" />
+    <Compile Include="OnMatchmakingServerReceivededFromSteam.cs" />
+    <Compile Include="OnMatchmakingServerListReceivededFromSteam.cs" />
+    <Compile Include="OnServerReceived.cs" />
+    <Compile Include="OnServerListReceived.cs" />
+    <Compile Include="Matchmaking.cs" />
+    <Compile Include="InGamePurchase.cs" />
+    <Compile Include="Lobby.cs" />
+    <Compile Include="GSClientApprove_t.cs" />
+    <Compile Include="GSClientDeny_t.cs" />
+    <Compile Include="GSClientKick_t.cs" />
+    <Compile Include="GSPolicyResponse_t.cs" />
+    <Compile Include="OnGameServerClientApprovedBySteam.cs" />
+    <Compile Include="OnGameServerClientApproved.cs" />
+    <Compile Include="OnGameServerClientDeniedBySteam.cs" />
+    <Compile Include="OnGameServerClientDenied.cs" />
+    <Compile Include="OnGameServerClientKickFromSteam.cs" />
+    <Compile Include="OnGameServerClientKick.cs" />
+    <Compile Include="OnGameServerPolicyResponseFromSteam.cs" />
+    <Compile Include="OnGameServerPolicyResponse.cs" />
+    <Compile Include="GameServer.cs" />
+    <Compile Include="ListEnumerator`1.cs" />
+    <Compile Include="Achievement.cs" />
+    <Compile Include="LeaderboardEntry_t.cs" />
+    <Compile Include="LeaderboardScoresDownloaded_t.cs" />
+    <Compile Include="OnLeaderboardEntriesRetrievedFromSteam.cs" />
+    <Compile Include="OnLeaderboardEntriesRetrieved.cs" />
+    <Compile Include="Leaderboard.cs" />
+    <Compile Include="Stat.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

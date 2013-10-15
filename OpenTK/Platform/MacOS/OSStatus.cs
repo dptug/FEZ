@@ -1,0 +1,63 @@
+﻿// Type: OpenTK.Platform.MacOS.OSStatus
+// Assembly: OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4
+// MVID: FE2CFFE8-B942-430E-8C15-E783DB6F0AD6
+// Assembly location: F:\Program Files (x86)\FEZ\OpenTK.dll
+
+namespace OpenTK.Platform.MacOS
+{
+  internal enum OSStatus
+  {
+    WindowRegionCodeInvalid = -30593,
+    WindowDoesntSupportFocus = -30583,
+    EventPassToNextTarget = -9880,
+    HotKeyExists = -9878,
+    EventNotInQueue = -9877,
+    EventLoopQuit = -9876,
+    EventLoopTimedOut = -9875,
+    EventNotHandled = -9874,
+    EventParameterNotFound = -9870,
+    EventInternalError = -9868,
+    EventDeferAccessibilityEvent = -9865,
+    EventTargetBusy = -9861,
+    EventAlreadyPosted = -9860,
+    WindowNoAppModalState = -5618,
+    WindowAppModalStateAlreadyExists = -5617,
+    WindowGroupInvalid = -5616,
+    WindowWrongState = -5615,
+    WindowManagerInternalError = -5614,
+    WindowAttributesConflict = -5613,
+    WindowAttributeImmutable = -5612,
+    WindowDoesNotFitOnscreen = -5611,
+    WindowNotFound = -5610,
+    FloatingWindowsNotInitialized = -5609,
+    WindowsAlreadyInitialized = -5608,
+    UserWantsToDragWindow = -5607,
+    CorruptWindowDescription = -5606,
+    UnrecognizedWindowClass = -5605,
+    WindowPropertyNotFound = -5604,
+    WindowDoesNotHaveProxy = -5602,
+    UnsupportedWindowAttributesForClass = -5601,
+    InvalidWindowPtr = -5600,
+    NotEnoughHardwareError = -201,
+    NoHardwareError = -200,
+    UserCanceledError = -128,
+    ParameterError = -50,
+    DInstErr = -26,
+    DRemovErr = -25,
+    ClosErr = -24,
+    OpenErr = -23,
+    UnitEmptyErr = -22,
+    BadUnitErr = -21,
+    WritErr = -20,
+    ReadErr = -19,
+    StatusErr = -18,
+    ControlErr = -17,
+    SeNoDB = -8,
+    SlpTypeErr = -5,
+    UnimpErr = -4,
+    CorErr = -3,
+    VTypErr = -2,
+    QueueError = -1,
+    NoError = 0,
+  }
+}

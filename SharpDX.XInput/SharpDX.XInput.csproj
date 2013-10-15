@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: F:\Program Files (x86)\FEZ\SharpDX.XInput.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27DD4676-C036-4F97-8D2D-D3F12ED1F9D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SharpDX.XInput</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>2.4.2.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SharpDX.XInput</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX">
+      <HintPath>lib\SharpDX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyDoc.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="Gamepad.cs" />
+    <Compile Include="BatteryDeviceType.cs" />
+    <Compile Include="BatteryLevel.cs" />
+    <Compile Include="BatteryType.cs" />
+    <Compile Include="CapabilityFlags.cs" />
+    <Compile Include="DeviceQueryType.cs" />
+    <Compile Include="DeviceSubType.cs" />
+    <Compile Include="DeviceType.cs" />
+    <Compile Include="GamepadButtonFlags.cs" />
+    <Compile Include="GamepadKeyCode.cs" />
+    <Compile Include="KeyStrokeFlags.cs" />
+    <Compile Include="UserIndex.cs" />
+    <Compile Include="XInput.cs" />
+    <Compile Include="BatteryInformation.cs" />
+    <Compile Include="Capabilities.cs" />
+    <Compile Include="Keystroke.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="Vibration.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="ResultCode.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
